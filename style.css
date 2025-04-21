@@ -1,0 +1,231 @@
+/* 
+Fonts we have in goole fonts:
+font-family: 'Barlow', sans-serif;
+*/
+
+/** Common styles **/
+body{
+	font-family: 'Barlow', sans-serif;
+	background-color: #ed5b2d;
+	font-size: 16px;
+	font-style: italic;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Barlow', sans-serif;
+}
+
+
+/** Navbar styles **/
+.navbar.bg-light{
+	background-color: #F6F6E9 !important;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.navbar-brand{
+	padding: 0;
+	margin: 0 30px 0 0;
+	width: 230px;
+}
+.navbar-brand img{
+	max-width: 175px;
+	height: 70px;
+}
+.navbar-nav{
+	font-size: 25px;
+	font-weight: bold;
+}
+.navbar-light .navbar-nav .nav-link{
+	color: #291B25;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+	color: #ed5b2d;
+}
+.dropdown-item{
+	font-size: 20px;
+	color: #291B25;
+}
+.gap-nav{
+	height: 90px;
+}
+
+
+/** form styles **/
+.form-tracking{
+	background-color: #fff;
+	border: 6px solid #291B25;
+	border-radius: 10px;
+	padding: 50px;
+	margin: 150px auto;
+	box-shadow: 0 0 80px rgba(0,0,0,0.3);
+}
+.form-login{
+	background-color: #fff;
+	border: 6px solid #291B25;
+	border-radius: 10px;
+	padding: 50px;
+	margin: 100px auto;
+	box-shadow: 0 0 80px rgba(0,0,0,0.3);
+}
+
+
+/** dilivery time box styles **/
+.dilivery-time-box-wrapper{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 100px auto;
+}
+.dilivery-time-box{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	background-color: #fff;
+	border-radius: 10px;
+	width: 31%;
+	text-align: center;
+	padding: 10px;
+	box-shadow: 0 0 30px rgba(0,0,0,0.3);
+	margin: 15px 0;
+}
+.dilivery-time-box p{
+	margin: 0;
+}
+.destination-to{
+	color: #ed5b2d;
+	margin-bottom: 5px;
+}
+.dilivery-time-box .destination-time{
+	display: block;
+	background-color: #493042;
+	color: #fff;
+	margin: 10px -11px -10px -10px;
+	border-radius: 0 0 10px 10px;
+	padding: 5px 0;
+}
+
+
+/** Order status timeline styles **/
+.order-status-wrapper{
+	padding: 80px 0;
+}
+.timeline{
+	display: block;
+	position: relative;
+	margin: 10px 0;
+	padding: 10px 0;
+	list-style: none;
+}
+.event{
+	display: block;
+	position: relative;
+	padding-left: 50px;
+	margin-left: 160px;
+	padding-bottom: 50px;
+	color: #493042;
+}
+.event::before{
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 5px;
+	content: '';
+	width: 5px;
+	height: 100%;
+	background-color: #f0f0f0;
+}
+.event::after{
+	display: block;
+	position: absolute;
+	left: -4.5px;
+	top: 3px;
+	content: '';
+	width: 14px;
+	height: 14px;
+	background-color: #493042;
+	border-radius: 50%;
+}
+.time{
+	width: 120px;
+	display: block;
+	position: absolute;
+	left: -160px;
+	top: 0;
+	text-align: right;
+	color: #f0f0f0;
+}
+
+
+
+/** Footer styles **/
+.footer-top{
+	background-color: #291B25;
+	color: #fff;
+	padding: 25px 0;
+}
+.widget-title{
+	margin: 0 0 20px 0;
+	padding: 0;
+	font-size: 19px;
+}
+.list-link{
+	list-style: none;
+	padding: 0;
+	line-height: 2em;
+}
+.list-link a{
+	color: #fff;
+	text-decoration: none;
+}
+.list-link a:hover{
+	color: #ed5b2d;
+}
+.footer-copyright{
+	background-color: #1d171a;
+	color: #ed5b2d;
+	padding: 15px 0;
+	text-align: center;
+}
+
+/** Logout styles **/
+#LogOut img{
+	height: 20px;
+    width: 20px;
+	margin-right: 10px;
+}
+#LogoutConfirm{
+    font-family:'Barlow', sans-serif;
+    position:fixed;
+    background-color: #ed5b2d;
+    border-radius: 10px;
+    border: 1px solid #291B25;
+    text-align: center;
+    z-index: 100;
+    width: 350px;
+    height: 200px;
+    top: 200px;
+    left: 37.5%;
+    pointer-events: none;
+    opacity: 0;
+}
+#LogoutConfirm h1{
+    margin-top: 40px;
+    color: #291B25;
+}
+#LogoutConfirm button{
+    margin-top: 10px;
+    font-family:'Barlow', sans-serif;
+    font-size: 20px;
+    padding: 0px 20px;
+    margin-inline: 20px;
+    border-radius: 10px;
+    color: #ed5b2d;
+}
+#LogoutConfirm button:hover{
+    font-family:'Barlow', sans-serif;
+    padding: 2.5px 20px;
+    color: #f54f1d;
+    background-color: #291B25;
+}
